@@ -1,0 +1,25 @@
+id:{{ id }}</br>
+name: {{ name }}</br>
+qts: {{ qts }}
+
+<div class='form-group'>
+  <div class="input-group">
+      <input id='product-id' type='hidden'/>
+  </div>
+ </div>
+ 
+<div class='form-group'>
+  <label class="control-label" for="product-name">Name</label>
+  <input id='product-name' type='text' class='form-control' 
+placeholder='product name' value="{{ name }}" /> 
+  <span class='validation-error'></span>
+</div>
+
+<div class='form-group'>
+  <label class="control-label" for="product-qts">qts</label>
+  <input id='product-qts' type='text' class='form-control' 
+placeholder='quantity no' value="{{ qts }}" />
+  <span class='validation-error'></span>
+</div>
+
+<button class='btn btn-submit' %>Save</button> 
